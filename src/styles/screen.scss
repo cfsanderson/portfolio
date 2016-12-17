@@ -1,279 +1,292 @@
 @import 'utility';
 
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'Brandon Grotesque', 'Raleway', sans-serif;
+$base-color-one: hsla(177, 8, 99, 1);
+$base-color-two: hsla(180, 37, 93, 1);
+$base-color-three: hsla(191, 46, 87, 1);
+$base-color-four: hsla(224, 63, 11, 3);
 
 html {
   text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
-  @include font-smoothing(on);
   margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+  font-family: $base-font-family;
+  font-weight: lighter;
+  color: $base-color-four;
+  background-color: $base-color-one;
+  min-height: 100%;
 }
 
-// html {
-//   text-size-adjust: 100%;
-// }
-//
-// body {
-//   font-family: Brandon Grotesque, sans-serif;
-//   font-kerning: 0.25em;
-//   margin: 0;
-//   background-color: hsla(205, 79%, 5%, 1);
-// }
-//
-// header.top {
-//   background-image: url(../images/ami-city-pier.jpg);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
-//
+header.top {
+  background-image: url(../images/ami-city-pier-2.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 8vw;
+    font-weight: lighter;
+  }
+
+  img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 2;
+  }
+
+  h4 {
+    flex: 2;
+    font-weight: lighter;
+  }
+}
+
 // section.about-me {
 //   padding: 5em 1em 10em 5em;
 //   display: flex;
 //   flex-wrap: wrap;
 // }
-//
-// .myphoto {
-//   width: 12em;
-//   height: 12em;
-//   border-radius: 0.3em;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   position: relative;
-// }
-//
-// blockquote {
-//   background-color: hsla(0, 100%, 100%, 0.6);
-//   border-radius: 0.3em;
-//   padding: 1em;
-//   position: relative;
-//   margin: -16em 1em 2em 13em;
-// }
-//
-// .triangle {
-//   opacity: 0.6;
-//   height: 1.5em;
-//   width: 1.5em;
-//   position: absolute;
-//   bottom: -1.5em;
-//   left: 20px;
-// }
-//
-// blockquote h1 {
-//   color: hsla(0, 0%, 21%, 1);
-//   margin-top: 0.1em;
-//   font-weight: lighter;
-//   font-size: 2em;
-// }
-//
-// blockquote h4 {
-//   color: hsla(0, 0%, 21%, 1);
-//   margin-bottom: 0;
-//   font-weight: normal;
-// }
-//
-// .thumbs {
-//   background-color: hsla(205, 79%, 5%, 0.5);
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-shrink: 2;
-//   border-radius: 0.3em;
-//   justify-content: center;
-//   padding-left: 0;
-// }
-//
-// .thumbs li {
-//   width: 15em;
-//   height: 9.27em;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   border-radius: 0.3em;
-//   margin: 0.5em;
-//   list-style-type: none;
-//   margin-top: 1em;
-//   margin-bottom: 1em;
-// }
-//
-// @media (max-width: 600px) {
-//   section.about-me {
-//     padding: 1em 1em 0 3em;
-//   }
-//
-//   .myphoto {
-//     width: 8em;
-//     height: 8em;
-//     border-radius: 0.3em;
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     position: relative;
-//   }
-//
-//   blockquote {
-//     background-color: hsla(0, 100%, 100%, 0.6);
-//     border-radius: 0.3em;
-//     padding: 1em;
-//     margin: 2em;
-//   }
-//
-//   .triangle {
-//     opacity: 0.6;
-//     height: 1.5em;
-//     width: 1.5em;
-//     position: relative;
-//     bottom: 2.5em;
-//     left: 7em;
-//     transform: rotate(-90deg);
-//   }
-//
-//   blockquote h1 {
-//     color: hsla(0, 0%, 21%, 1);
-//     margin-top: 0.1em;
-//   }
-//
-//   blockquote h4 {
-//     color: hsla(0, 0%, 21%, 1);
-//     margin-bottom: 0;
-//   }
-//
-//   .thumbs {
-//     align-items: center;
-//   }
-//
-//   .thumbs li {
-//     border-radius: 50%;
-//     list-style-type: none;
-//     width: 6em;
-//     height: 6em;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     margin: 1em;
-//   }
-// }
-//
-// main {
-//   background-image: url(../images/ami-city-pier-2.jpg);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
-//
-// article {
-//   background-color: hsla(0, 100%, 100%, 1);
-//   color: hsla(0, 0%, 21%, 0.75);
-//   margin: 2.5em;
-//   border-radius: 0.3em;
-// }
-//
-// article header {
-//   height: 4em;
-//   width: 100%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   border-radius: 0.3em 0.3em 0 0;
-// }
-//
-// article div {
-//   padding: 1.2em;
-// }
-//
-// time {
-//   font-size: 0.75em;
-//   font-weight: lighter;
-// }
-//
-// .keep-reading {
-//   background-color: hsla(204, 100%, 42%, 1);
-//   padding: 0.7em;
-//   font-weight: bold;
-//   position: absolute;
-//   right: 3em;
-//   border: 1px solid hsl(200, 60%, 50%);
-//   border-radius: 0.3em;
-// }
-//
-// .keep-reading:link,
-// .keep-reading:visited {
-//   color: white;
-//   text-decoration: none;
-// }
-//
-// footer h2 {
-//   margin-top: 4em;
-//   margin-bottom: 2.5em;
-//   text-align: center;
-//   font-size: 2em;
-//   padding: 0 0.5em;
-// }
-//
-// footer ul {
-//   display: flex;
-//   justify-content: space-around;
-//   margin: -3em 10em 5em 10em;
-//   list-style-type: none;
-//   padding-left: 0;
-// }
-//
-// footer li {
-//   font-size: 2.3em;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   /*background-color: hsla(204, 100%, 42%, 1);*/
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   color: hsla(0, 0%, 21%, 0.75)
-// }
-//
-// footer a {
-//   color: white;
-//   text-indent: 0;
-//   color: hsla(0, 0%, 21%, 0.75)
-// }
-//
-// footer h5 {
-//   text-align: center;
-//   font-size: 1em;
-//   padding: 1em;
-//   color: hsla(0, 0%, 21%, 0.75);
-// }
-//
-// @media (max-width: 600px) {
-//   footer ul {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: center;
-//     list-style-type: none;
-//     padding-left: 0;
-//     color: hsla(0, 0%, 21%, 0.75)
-//   }
-//
-//   footer li {
-//     flex-wrap: wrap;
-//     font-size: 4em;
-//     justify-content: center;
-//     align-items: center;
-//     width: 85px;
-//     height: 85px;
-//     border-radius: 50%;
-//     margin: 0.2em;
-//     color: hsla(0, 0%, 21%, 0.75);
-//   }
-//
-//   footer h5 {
-//     text-align: center;
-//     font-size: 1em;
-//     padding: 1em;
-//     color: hsla(0, 0%, 21%, 0.75)
-//   }
-// }
+
+
+blockquote {
+  background-color: hsla(0, 100%, 100%, 0.6);
+  border-radius: 0.3em;
+  padding: 1em;
+  position: relative;
+  margin: -16em 1em 2em 13em;
+}
+
+blockquote h1 {
+  color: hsla(0, 0%, 21%, 1);
+  margin-top: 0.1em;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+blockquote h4 {
+  color: hsla(0, 0%, 21%, 1);
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.thumbs {
+  background-color: hsla(205, 79%, 5%, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  border-radius: 0.3em;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.thumbs li {
+  width: 15em;
+  height: 9.27em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3em;
+  margin: 0.5em;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  section.about-me {
+    padding: 1em 1em 0 3em;
+  }
+
+  .avatar_url {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  blockquote {
+    background-color: hsla(0, 100%, 100%, 0.6);
+    border-radius: 0.3em;
+    padding: 1em;
+    margin: 2em;
+  }
+
+  .triangle {
+    opacity: 0.6;
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+    bottom: 2.5em;
+    left: 7em;
+    transform: rotate(-90deg);
+  }
+
+  blockquote h1 {
+    color: hsla(0, 0%, 21%, 1);
+    margin-top: 0.1em;
+  }
+
+  blockquote h4 {
+    color: hsla(0, 0%, 21%, 1);
+    margin-bottom: 0;
+  }
+
+  .thumbs {
+    align-items: center;
+  }
+
+  .thumbs li {
+    border-radius: 50%;
+    list-style-type: none;
+    width: 6em;
+    height: 6em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1em;
+  }
+}
+
+main {
+  background-image: url(../images/ami-city-pier.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article {
+  background-color: hsla(0, 100%, 100%, 1);
+  color: hsla(0, 0%, 21%, 0.75);
+  margin: 2.5em;
+  border-radius: 0.3em;
+}
+
+article header {
+  height: 4em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+article div {
+  padding: 1.2em;
+}
+
+time {
+  font-size: 0.75em;
+  font-weight: lighter;
+}
+
+.keep-reading {
+  background-color: hsla(204, 100%, 42%, 1);
+  padding: 0.7em;
+  font-weight: bold;
+  position: absolute;
+  right: 3em;
+  border: 1px solid hsl(200, 60%, 50%);
+  border-radius: 0.3em;
+}
+
+.keep-reading:link,
+.keep-reading:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  color: $base-color-four;
+  font-weight: lighter;
+  background-image: url(../images/ami-city-pier-2.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  h2 {
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+    text-align: center;
+    font-size: 2em;
+    padding: 0 0.5em;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: -3em 10em 5em 10em;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      font-size: 2.3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      a {
+        text-indent: 0;
+      }
+    }
+  }
+
+  h5 {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    color: $base-color-four;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      padding-left: 0;
+      // color: hsla(0, 0%, 21%, 0.75)
+    }
+
+    li {
+      flex-wrap: wrap;
+      font-size: 4em;
+      justify-content: center;
+      align-items: center;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      margin: 0.2em;
+      // color: hsla(0, 0%, 21%, 0.75);
+    }
+
+    h5 {
+      text-align: center;
+      font-size: 1em;
+      padding: 1em;
+      // color: hsla(0, 0%, 21%, 0.75);
+    }
+  }
+}
