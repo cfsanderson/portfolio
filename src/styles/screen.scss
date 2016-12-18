@@ -5,7 +5,8 @@ $base-font-family: 'Brandon Grotesque', 'Raleway', sans-serif;
 $base-color-one: hsla(177, 8, 99, 1);
 $base-color-two: hsla(180, 37, 93, 1);
 $base-color-three: hsla(191, 46, 87, 1);
-$base-color-four: hsla(224, 63, 11, 3);
+$base-color-four: hsl(240, 100%, 10%);
+$base-color-five: hsla(204, 82%, 17%, 1);
 
 html {
   text-size-adjust: 100%;
@@ -16,7 +17,7 @@ body {
   margin: 0;
   font-family: $base-font-family;
   font-weight: lighter;
-  color: $base-color-four;
+  color: $base-color-five;
   background-color: $base-color-one;
   min-height: 100%;
 }
@@ -28,21 +29,159 @@ header.top {
   background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
-  padding: 2em;
+  padding: 0.5em;
   text-align: center;
 
+  // h1 {
+  //   margin: 0;
+  //   font-size: 8vw;
+  //   font-weight: lighter;
+  //   display: inline-block;
+  // }
   h1 {
-    margin: 0;
-    font-size: 8vw;
+    color: $base-color-five;
+    font-size: 2em;
     font-weight: lighter;
-    display: inline-block;
+    margin: 0 0 0.5em;
+    font-variant-caps: small-caps;
+
+    @media (min-width: 450px) {
+      font-size: 2.75em;
+    }
+
+    @media (min-width: 760px) {
+      font-size: 3.25em;
+    }
+
+    @media (min-width: 900px) {
+      font-size: 5.25em;
+      margin: 0 0 0.5em;
+    }
   }
 
-  h3 {
+  h2 {
     font-variant-caps: all-small-caps;
     font-weight: lighter;
   }
+
+  // a {
+  //   // background: $base-color-three;
+  //   border: 1px solid $base-color-five;
+  //   color: inherit;
+  //   list-style-position: inside;
+  //   text-decoration: none;
+  //   padding: 0.5em;
+  //   font-size: 1em;
+  //
+  //   &:hover,
+  //   &:active {
+  //     background: $base-color-five;
+  //     color: $base-color-one;
+  //     letter-spacing: 0.25em;
+  //   }
+  // }
+  // .btn {
+  //   color: #fff;
+  //   cursor: pointer;
+  //   display: block;
+  //   font-size:16px;
+  //   font-weight: 400;
+  //   line-height: 45px;
+  //   margin: 0 auto 2em;
+  //   max-width: 160px;
+  //   position: relative;
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  //   vertical-align: middle;
+  //   width: 100%;
+  //
+  //   @media(min-width: 400px) {
+  //     display: inline-block;
+  //     margin-right: 2.5em;
+  //
+  //     &:nth-of-type(even) {
+  //       margin-right: 0;
+  //     }
+  //   }
+  //
+  //   @media(min-width: 600px) {
+  //
+  //     &:nth-of-type(even) {
+  //       margin-right: 2.5em;
+  //     }
+  //
+  //     &:nth-of-type(5) {
+  //       margin-right: 0;
+  //     }
+  //
+  //   }
+  //
+  //   &:hover { text-decoration: none; }
+  //
+  // }
+
+  button {
+    letter-spacing: 0;
+    color: $base-color-five;
+    cursor: pointer;
+    // display: block;
+    font-size: 0.75em;
+    font-weight: lighter;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  button:hover,
+  button:active {
+    letter-spacing: 0.1em;
+  }
+
+  button::after,
+  button::before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+  }
+
+  button:hover::after,
+  button:hover::before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+  }
+
+  button:hover::before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+  }
 }
+
+// a {
+//   background: $base-color-three;
+//   border-bottom: 1px solid;
+//   color: $white;
+//   line-height: 1.4;
+//   padding: .25em;
+//   text-decoration: none;
+//
+//   &:hover {
+//     background: rgba($white, 1);
+//     color: $red;
+//   }
+// }
 
 // section.about-me {
 //   padding: 5em 1em 10em 5em;
@@ -59,7 +198,7 @@ div.bio {
   img.gitHubChart {
     // display: block;
     // align-items: center;
-  }
+  }p
 
   img.avatar_url {
     width: 8em;
@@ -228,7 +367,7 @@ time {
 }
 
 footer {
-  color: $base-color-four;
+  color: $base-color-five;
   font-weight: lighter;
   background-image: url(../images/ami-city-pier-2.jpg);
   background-size: cover;
@@ -261,6 +400,7 @@ footer {
 
       a {
         text-indent: 0;
+        color: inherit;
       }
     }
   }
