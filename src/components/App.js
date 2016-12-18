@@ -33,9 +33,9 @@ class App extends Component {
   render () {
     return (
       <div>
-        <Header name={this.state.name} avatar_url={this.state.avatar_url} bio={this.state.bio} />
+        <Header name={this.state.name} />
         <BlogFeed />
-        <GitHubFeed />
+        <GitHubFeed avatar_url={this.state.avatar_url} bio={this.state.bio} />
         <Footer />
       </div>
     )
