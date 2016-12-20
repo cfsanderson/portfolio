@@ -7,9 +7,10 @@ class BlogFeed extends Component {
   render () {
     return (
       <div>
-        {/* <h1>My Medium blog feed here</h1> */}
-        <p>{this.props.feed}</p>
-        <p>{this.props.items}</p>
+        {/* <h1>My Medium blog feed here</h1>
+          map */}
+        {/* <p>{this.props.feed}</p>
+        <p>{this.props.items}</p> */}
       </div>
     )
   }

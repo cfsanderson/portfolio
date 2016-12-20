@@ -9,7 +9,7 @@ class Footer extends Component {
       <div>
         <footer>
           <h2>Stay connected with me.</h2>
-          <ul>
+          <ul className='socials'>
             <li><a href='https://twitter.com/cfsanderson' target='_blank'><i className='fa fa-twitter' aria-hidden='true' /></a></li>
             <li><a href='https://www.facebook.com/caleb.f.sanderson' target='_blank'><i className='fa fa-facebook' aria-hidden='true' /></a></li>
             <li><a href='https://www.instagram.com/cfsanderson/' target='_blank'><i className='fa fa-instagram' aria-hidden='true' /></a></li>
