@@ -23,7 +23,7 @@ body {
   min-height: 100%;
 }
 
-// top header section
+// Top header section. Will eventually become a navbar
 
 header.top {
   background-image: url(../images/ami-city-pier-2.jpg);
@@ -92,6 +92,8 @@ header.top {
     color: inherit;
   }
 
+  // "View Resume" button
+
   button {
     letter-spacing: 0;
     color: $base-color-five;
@@ -145,8 +147,8 @@ header.top {
     top: 0;
     width: 80%;
   }
+  // buttons styling codepen https://codepen.io/davidicus/pen/emgQKJ?editors=0110
 }
-// buttons styling codepen https://codepen.io/davidicus/pen/emgQKJ?editors=0110
 
 // Skills section
 
@@ -197,7 +199,9 @@ div.bio {
   }
 }
 
-div.skills {
+// Section header styling (Skills, BlogFeed, etc.)
+
+.section-header {
   font-size: 1.15em;
   text-align: center;
 
@@ -223,7 +227,9 @@ div.skills {
     font-variant-caps: all-small-caps;
     font-weight: lighter;
   }
+}
 
+div.skills {
   ul {
     list-style-type: none;
     display: flex;

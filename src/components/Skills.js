@@ -11,7 +11,7 @@ class Skills extends Component {
           <p>{this.props.bio}</p>
           <img className='avatar_url' src={this.props.avatar_url} />
         </div>
-        <div className='skills'>
+        <div className='skills section-header'>
           <h1>Skills</h1>
           <div className='words'>
             <blockquote className='quote' cite='https://en.wikipedia.org/wiki/Carl_Rogers'>
@@ -28,7 +28,9 @@ class Skills extends Component {
           </ul>
           <div className='gitHub'>
             <p>Check out some of my projects on GitHub.</p>
-            <a href='https://github.com/cfsanderson'><img className='gitHubChart' src='http://ghchart.rshah.org/22ddf6/cfsanderson' alt="Caleb's Github chart" /></a>
+            <a href='https://github.com/cfsanderson'>
+              <img className='gitHubChart' src='http://ghchart.rshah.org/22ddf6/cfsanderson' alt="Caleb's Github chart" />
+            </a>
           </div>
         </div>
       </div>

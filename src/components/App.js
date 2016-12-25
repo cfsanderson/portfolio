@@ -43,8 +43,8 @@ class App extends Component {
     return (
       <div>
         <Header name={this.state.name} />
-        <BlogFeed items={this.state.blog} />
         <Skills avatar_url={this.state.avatar_url} bio={this.state.bio} />
+        <BlogFeed items={this.state.blog} />
         <Footer />
       </div>
     )
