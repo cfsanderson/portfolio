@@ -8,6 +8,7 @@ $base-color-three: hsla(191, 46, 87, 1);
 $base-color-four: hsl(240, 100%, 10%);
 $base-color-five: hsla(204, 82%, 17%, 1);
 $base-color-six: hsla(183, 55%, 50%, 1);
+$base-font-color: hsla(0, 0%, 21%, 1);
 
 html {
   text-size-adjust: 100%;
@@ -18,7 +19,7 @@ body {
   margin: 0;
   font-family: $base-font-family;
   font-weight: lighter;
-  color: $base-color-five;
+  color: $base-font-color;
   background-color: $base-color-one;
   min-height: 100%;
 }
@@ -32,6 +33,7 @@ header.top {
   background-repeat: no-repeat;
   padding: 0.5em;
   text-align: center;
+  color: $base-color-five;
 
   @media (min-width: 450px) {
     padding-top: 1em;
@@ -285,6 +287,69 @@ div.skills {
     }
   }
 }
+
+//  Blog posts
+
+.blogposts {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+article {
+  background-color: hsla(0, 100%, 100%, 1);
+  color: hsla(0, 0%, 21%, 0.75);
+  margin: 2.5em;
+  border-radius: 0.3em;
+
+  header {
+    height: 4em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3em 0.3em 0 0;
+  }
+
+  div {
+    padding: 1.2em;
+  }
+}
+
+time {
+  font-size: 0.75em;
+  font-weight: lighter;
+}
+
+// .keep-reading {
+//   background-color: hsla(204, 100%, 42%, 1);
+//   padding: 0.7em;
+//   font-weight: bold;
+//   position: absolute;
+//   right: 3em;
+//   border: 1px solid hsl(200, 60%, 50%);
+//   border-radius: 0.3em;
+// }
+//
+// .keep-reading:link,
+// .keep-reading:visited {
+//   color: white;
+//   text-decoration: none;
+// }
+
+@media (min-width: 450px) {
+  font-size: 2.75em;
+}
+
+@media (min-width: 760px) {
+  font-size: 3.25em;
+}
+
+@media (min-width: 900px) {
+  font-size: 5.25em;
+  margin: 0 0 0.5em;
+}
+
 
 footer {
   color: $base-color-two;
