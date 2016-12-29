@@ -214,6 +214,7 @@ div.bio {
 
   .quote {
     font-style: italic;
+
   }
 
   h1 {
@@ -232,7 +233,7 @@ div.bio {
 }
 
 div.skills {
-  ul {
+  ul.skill-icons {
     list-style-type: none;
     display: flex;
     padding: 1em;
@@ -259,7 +260,7 @@ div.skills {
     max-width: 900px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     ul {
       display: flex;
       // flex-wrap: wrap;
@@ -292,8 +293,11 @@ div.skills {
 
 .blogposts {
   display: flex;
-  justify-content: space-around;
-  flex: 1;
+  justify-content: center;
+  // max-width: 1000px;
+  // padding: 1em;
+  align-content: center;
+  margin-right: 0;
 }
 
 article {
@@ -301,6 +305,8 @@ article {
   color: hsla(0, 0%, 21%, 0.75);
   margin: 2.5em;
   border-radius: 0.3em;
+  height: 200px;
+  width: 25vw;
 
   header {
     height: 4em;
@@ -321,6 +327,46 @@ time {
   font-weight: lighter;
 }
 
+@media (max-width: 700px) {
+  // .blogposts {
+  //   display: flex;
+  //   flex-direction: row;
+  //   // max-width: 1000px;
+  //   // padding: 1em;
+  //   // align-content: center;
+  //   margin-right: 0;
+  // }
+
+  article {
+    display: inline-block;
+    // flex-direction: row;
+    background-color: hsla(0, 100%, 100%, 1);
+    color: hsla(0, 0%, 21%, 0.75);
+    margin: 2.5em;
+    border-radius: 0.3em;
+    // height: 200px;
+    // width: 25vw;
+
+    header {
+      // height: 4em;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0.3em 0.3em 0 0;
+    }
+
+    div {
+      padding: 1.2em;
+    }
+  }
+
+  time {
+    font-size: 0.75em;
+    font-weight: lighter;
+  }
+}
+
 // .keep-reading {
 //   background-color: hsla(204, 100%, 42%, 1);
 //   padding: 0.7em;
@@ -337,19 +383,18 @@ time {
 //   text-decoration: none;
 // }
 
-@media (min-width: 450px) {
-  font-size: 2.75em;
-}
-
-@media (min-width: 760px) {
-  font-size: 3.25em;
-}
-
-@media (min-width: 900px) {
-  font-size: 5.25em;
-  margin: 0 0 0.5em;
-}
-
+// @media (min-width: 450px) {
+//   font-size: 2.75em;
+// }
+//
+// @media (min-width: 760px) {
+//   font-size: 3.25em;
+// }
+//
+// @media (min-width: 900px) {
+//   font-size: 5.25em;
+//   margin: 0 0 0.5em;
+// }
 
 footer {
   color: $base-color-two;
