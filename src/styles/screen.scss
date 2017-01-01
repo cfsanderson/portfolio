@@ -115,11 +115,12 @@ header.top {
     border-top: none;
     border-right: 1px solid $base-color-three;
     border-bottom: none;
+    // border: 1px solid $base-color-three;
   }
 
   button:hover,
   button:active {
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
     transition: all 200ms ease-in-out;
   }
 
@@ -214,7 +215,6 @@ div.bio {
 
   .quote {
     font-style: italic;
-
   }
 
   h1 {
@@ -291,110 +291,114 @@ div.skills {
 
 //  Blog posts
 
-.blogposts {
-  display: flex;
-  justify-content: center;
-  // max-width: 1000px;
-  // padding: 1em;
-  align-content: center;
-  margin-right: 0;
-}
-
-article {
-  background-color: hsla(0, 100%, 100%, 1);
-  color: hsla(0, 0%, 21%, 0.75);
-  margin: 2.5em;
-  border-radius: 0.3em;
-  height: 200px;
-  width: 25vw;
-
-  header {
-    height: 4em;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 0.3em 0.3em 0 0;
-  }
-
-  div {
-    padding: 1.2em;
-  }
-}
-
-time {
-  font-size: 0.75em;
-  font-weight: lighter;
-}
-
-@media (max-width: 700px) {
-  // .blogposts {
-  //   display: flex;
-  //   flex-direction: row;
-  //   // max-width: 1000px;
-  //   // padding: 1em;
-  //   // align-content: center;
-  //   margin-right: 0;
-  // }
-
-  article {
-    display: inline-block;
-    // flex-direction: row;
-    background-color: hsla(0, 100%, 100%, 1);
-    color: hsla(0, 0%, 21%, 0.75);
-    margin: 2.5em;
-    border-radius: 0.3em;
-    // height: 200px;
-    // width: 25vw;
-
-    header {
-      // height: 4em;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 0.3em 0.3em 0 0;
-    }
-
-    div {
-      padding: 1.2em;
-    }
-  }
-
-  time {
+.blog {
+  button {
+    letter-spacing: 0;
+    color: $base-color-five;
+    cursor: pointer;
+    display: block;
     font-size: 0.75em;
     font-weight: lighter;
+    line-height: 45px;
+    // margin: 0 auto 2em;
+    max-width: 160px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    background-color: inherit;
+    border-left: 1px solid $base-color-three;
+    border-top: none;
+    border-right: 1px solid $base-color-three;
+    border-bottom: none;
+    // border: 1px solid $base-color-three;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  button:hover,
+  button:active {
+    letter-spacing: 0.15em;
+    transition: all 200ms ease-in-out;
+  }
+
+  button::after,
+  button::before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    width: 0;
+  }
+
+  button:hover::after,
+  button:hover::before {
+    backface-visibility: hidden;
+    border-color: $base-color-five;
+    transition: width 350ms ease-in-out;
+    width: 80%;
+  }
+
+  button:hover::before {
+    bottom: auto;
+    top: 0;
+    width: 80%;
+  }
+
+  .blogposts {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 0;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: inherit;
+      color: hsla(0, 0%, 21%, 0.75);
+      width: 25vw;
+      padding: 1.5em;
+
+      header {
+        height: 4em;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.3em 0.3em 0 0;
+      }
+
+      time {
+        font-size: 0.75em;
+        font-weight: lighter;
+      }
+    }
+
+    @media (max-width: 600px) {
+      display: block;
+      width: auto;
+      margin: 0;
+
+      article {
+        margin-right: 0;
+        width: auto;
+      }
+
+      button {
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }
-
-// .keep-reading {
-//   background-color: hsla(204, 100%, 42%, 1);
-//   padding: 0.7em;
-//   font-weight: bold;
-//   position: absolute;
-//   right: 3em;
-//   border: 1px solid hsl(200, 60%, 50%);
-//   border-radius: 0.3em;
-// }
-//
-// .keep-reading:link,
-// .keep-reading:visited {
-//   color: white;
-//   text-decoration: none;
-// }
-
-// @media (min-width: 450px) {
-//   font-size: 2.75em;
-// }
-//
-// @media (min-width: 760px) {
-//   font-size: 3.25em;
-// }
-//
-// @media (min-width: 900px) {
-//   font-size: 5.25em;
-//   margin: 0 0 0.5em;
-// }
 
 footer {
   color: $base-color-two;
