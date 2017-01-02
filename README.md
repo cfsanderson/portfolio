@@ -1,5 +1,5 @@
 # Portfolio
-[](http://imgur.com/a/egS9p)
+![](http://imgur.com/a/egS9p)
 
 This is my [personal portfolio website](src/images/portfolio-preview-01.gif). The first version was created with basic HTML, CSS, and vanilla Javascript. This version was created using Sass (SCSS) and React and first published in late December, 2016. Although it started as part of my coursework at [The Iron Yard](https://www.theironyard.com/), I'm hoping to maintain it long after my time here.
 
