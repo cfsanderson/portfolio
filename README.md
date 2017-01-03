@@ -1,7 +1,6 @@
 # [Portfolio](http://portfolio-2-0.cfsanderson.surge.sh/)
 
-This is my [personal portfolio website](http://portfolio-2-0.cfsanderson.surge.sh/)
-). ![](http://imgur.com/LmWFGM7)
+This is my personal portfolio website ![](./src/images/portfolio-preview-01.gif)
 
 The first version was created with basic HTML, CSS, and vanilla Javascript. This version was created using Sass (SCSS) and React and first published in late December, 2016. Although it started as part of my coursework at [The Iron Yard](https://www.theironyard.com/), I'm hoping to maintain it long after my time here.
 
