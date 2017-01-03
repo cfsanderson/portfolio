@@ -28,26 +28,48 @@ class Skills extends Component {
           </ul>
           <div className='gitHub'>
             <p>Click the images below to check out some of my projects on GitHub.</p>
-            <ul className='gifs'>
+            {/* <ul className='gifs'>
               <li><a href='https://github.com/cfsanderson/snowman'><img src='http://i.imgur.com/SoQJh1c.gif' alt='Snowman game animated GIF' width='323' height='200' /></a></li>
               <li><a href='https://github.com/cfsanderson/tic-tac-toe'><img src='http://i.imgur.com/CtWcvNu.gif' alt='Crab-tac-toe game animated GIF' width='323' height='200' /></a></li>
               <li><a href='https://github.com/cfsanderson/explosion-avoider'><img src='http://i.imgur.com/Cy2gE5y.gif' alt='Minesweeper animated GIF' width='323' height='200' /></a></li>
-            </ul>
+            </ul> */}
+            <div className='testdiv'>
+              <div className='hovereffect'>
+                <img src='http://i.imgur.com/SoQJh1c.gif'alt='Snowman game animated GIF' width='323' height='200' />
+                <div className='overlay'>
+                  <a href='https://github.com/cfsanderson/snowman' target='_blank'>
+                    <h2>Snowman</h2>
+                    <p><i className='fa fa-github' aria-hidden='true' /></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='testdiv'>
+              <div className='hovereffect'>
+                <img src='http://i.imgur.com/CtWcvNu.gif' alt='Crab-Tac-Toe game animated GIF' width='323' height='200' />
+                <div className='overlay'>
+                  <a href='https://github.com/cfsanderson/tic-tac-toe' target='_blank'>
+                    <h2>Crab-Tac-Toe</h2>
+                    <p><i className='fa fa-github' aria-hidden='true' /></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='testdiv'>
+              <div className='hovereffect'>
+                <img src='http://i.imgur.com/Cy2gE5y.gif' alt='Minesweeper game animated GIF' width='323' height='200' />
+                <div className='overlay'>
+                  <a href='https://github.com/cfsanderson/explosion-avoider' target='_blank'>
+                    <h2>Minesweeper</h2>
+                    <p><i className='fa fa-github' aria-hidden='true' /></p>
+                  </a>
+                </div>
+              </div>
+            </div>
             <a href='https://github.com/cfsanderson'>
               <img className='gitHubChart' src='http://ghchart.rshah.org/22ddf6/cfsanderson' alt="Caleb's Github chart" />
             </a>
           </div>
-          {/* <div className='testdiv'>
-            <div className='hovereffect'>
-              <img src='http://i.imgur.com/SoQJh1c.gif'alt='Snowman game animated GIF' width='323' height='200' />
-              <div className='overlay'>
-                <a href='https://github.com/cfsanderson/snowman' target='_blank'>
-                  <h2>Snowman</h2>
-                  <p><i className='fa fa-github' aria-hidden='true' /></p>
-                </a>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     )
