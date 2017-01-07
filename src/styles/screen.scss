@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Helvetica;
+  font-family: $font-brandon;
   font-weight: lighter;
   color: $font-color;
   background-color: $color-one;
@@ -218,14 +218,15 @@ div.bio {
   a {
     color: $font-color;
     font-weight: bolder;
+    text-decoration: none;
     // transition-property: all;
     // transition-duration: 0.6s;
     // transition-timing-function: ease;
 
     &:hover {
-      font-size: 1.05em;
-      font-style: italic;
+      font-size: 0.98em;
       font-weight: bold;
+      // font-weight: bold;
       // transition: all 200ms ease-in-out;
     }
   }
@@ -320,12 +321,12 @@ div.skills {
 }
 
 div.gitHub {
-  padding-left: 20vw;
-  padding-right: 20vw;
   text-align: center;
 
   p {
     line-height: 160%;
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 }
 
@@ -365,10 +366,28 @@ div.gitHub {
 // }
 
 // Hover effect for the GitHub GIFS from (#13) - https://miketricking.github.io/dist/
+.gif-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-right: 0;
+  max-width: 1200px;
+  padding: 1em;
+  padding-bottom: 3em;
+  margin: auto;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 
 .testdiv {
   height: 200px;
   width: 323px;
+  padding: 0.5em;
 
   .hovereffect {
     width: 100%;
