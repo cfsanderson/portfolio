@@ -17,7 +17,8 @@ class Skills extends Component {
             <blockquote className='quote' cite='https://en.wikipedia.org/wiki/Carl_Rogers'>
               <q>The only person who is educated is the one who has learned how to learn and change.</q><span> - Carl Rogers</span>
             </blockquote>
-            <p>I'm a creative learner and a craftsman. I love to take on new and difficult tasks and use my skills to create beautiful and useful things. Here are some of the tools I used to create this page. More to come.</p>
+            <p>I'm a creative, a learner, and a digital craftsman. I'd rather read a book and learn how to make something for myself than buy it off the shelf.</p>
+            <p>I love a challenge and especially when I get to use my skills to create beautiful and useful things. In the past I've done that with music, film, and visual media. While I still enjoy those things, my focus has shifted to software development. Here are some of the creative tools I am currently investing in.<br /> More to come.</p>
           </div>
           <ul className='skill-icons'>
             <li>&#xe636;</li>
@@ -27,7 +28,8 @@ class Skills extends Component {
             <li>&#xe64b;</li>
           </ul>
           <div className='gitHub'>
-            <p>Click the images below to check out some of my projects on GitHub.</p>
+            <p>As part of our training at <a href='https://www.theironyard.com/'>The Iron Yard</a> we build a lot of simple but functional apps that reinforce programming logic and feature different key aspects of the framework we are working with.</p>
+            <p>Here are some of my favorite projects. Click to check them out on <a href='https://github.com/cfsanderson'>GitHub.</a></p>
             {/* <ul className='gifs'>
               <li><a href='https://github.com/cfsanderson/snowman'><img src='http://i.imgur.com/SoQJh1c.gif' alt='Snowman game animated GIF' width='323' height='200' /></a></li>
               <li><a href='https://github.com/cfsanderson/tic-tac-toe'><img src='http://i.imgur.com/CtWcvNu.gif' alt='Crab-tac-toe game animated GIF' width='323' height='200' /></a></li>

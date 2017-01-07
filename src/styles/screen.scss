@@ -1,14 +1,15 @@
 @import 'utility';
 
-$base-text-size: 16px;
-$base-font-family: 'Brandon Grotesque', 'Raleway', sans-serif;
-$base-color-one: hsla(177, 8, 99, 1);
-$base-color-two: hsla(180, 37, 93, 1);
-$base-color-three: hsla(191, 46, 87, 1);
-$base-color-four: hsl(240, 100%, 10%);
-$base-color-five: hsla(204, 82%, 17%, 1);
-$base-color-six: hsla(183, 55%, 50%, 1);
-$base-font-color: hsla(0, 0%, 21%, 1);
+$text-size: 16px;
+$font-brandon: 'Brandon Grotesque', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$color-one: hsla(177, 8, 99, 1);
+$color-two: hsla(180, 37, 93, 1);
+$color-three: hsla(191, 46, 87, 1);
+$color-four: hsl(240, 100%, 10%);
+$color-five: hsla(204, 82%, 17%, 1);
+$color-six: hsla(183, 55%, 50%, 1);
+$font-color: hsla(0, 0%, 21%, 1);
 
 html {
   text-size-adjust: 100%;
@@ -17,10 +18,10 @@ html {
 
 body {
   margin: 0;
-  font-family: $base-font-family;
+  font-family: Helvetica;
   font-weight: lighter;
-  color: $base-font-color;
-  background-color: $base-color-one;
+  color: $font-color;
+  background-color: $color-one;
   min-height: 100%;
 }
 
@@ -33,7 +34,7 @@ header.top {
   background-repeat: no-repeat;
   padding: 0.5em;
   text-align: center;
-  color: $base-color-five;
+  color: $color-five;
 
   @media (min-width: 450px) {
     padding-top: 1em;
@@ -51,7 +52,7 @@ header.top {
   }
 
   h1 {
-    color: $base-color-five;
+    color: $color-five;
     font-size: 2em;
     font-weight: lighter;
     margin: 0 0 0.5em;
@@ -98,7 +99,7 @@ header.top {
 
   button {
     letter-spacing: 0;
-    color: $base-color-five;
+    color: $color-five;
     cursor: pointer;
     display: block;
     font-size: 0.75em;
@@ -111,9 +112,9 @@ header.top {
     vertical-align: middle;
     width: 100%;
     background-color: inherit;
-    border-left: 1px solid $base-color-three;
+    border-left: 1px solid $color-three;
     border-top: none;
-    border-right: 1px solid $base-color-three;
+    border-right: 1px solid $color-three;
     border-bottom: none;
     transition-property: all;
     transition-duration: 0.6s;
@@ -124,6 +125,8 @@ header.top {
   button:active {
     letter-spacing: 0.15em;
     transition: all 200ms ease-in-out;
+    // font-size: 0.7em;
+    // font-weight: bold;
   }
 
   button::after,
@@ -142,7 +145,7 @@ header.top {
   button:hover::after,
   button:hover::before {
     backface-visibility: hidden;
-    border-color: $base-color-five;
+    border-color: $color-five;
     transition: width 350ms ease-in-out;
     width: 100%;
   }
@@ -165,6 +168,8 @@ div.bio {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  line-height: 180%;
+
 
   img.avatar_url {
     width: 8em;
@@ -210,25 +215,48 @@ div.bio {
   font-size: 1.15em;
   text-align: center;
 
+  a {
+    color: $font-color;
+    font-weight: bolder;
+    // transition-property: all;
+    // transition-duration: 0.6s;
+    // transition-timing-function: ease;
+
+    &:hover {
+      font-size: 1.05em;
+      font-style: italic;
+      font-weight: bold;
+      // transition: all 200ms ease-in-out;
+    }
+  }
+
   .words {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
+
+    p {
+      line-height: 160%;
+    }
   }
 
   .quote {
+    margin: 0;
     font-style: italic;
+    font-size: 0.9em;
+    padding: 2em;
   }
 
   h1 {
-    background: $base-color-five;
-    background: -webkit-linear-gradient(left top, $base-color-six, $base-color-two);
-    background: -o-linear-gradient(bottom right, $base-color-six, $base-color-two);
-    background: -moz-linear-gradient(bottom right, $base-color-six, $base-color-two);
-    background: linear-gradient(to bottom right, $base-color-five, $base-color-six, $base-color-two);
+    background: $color-five;
+    background: -webkit-linear-gradient(left top, $color-six, $color-two);
+    background: -o-linear-gradient(bottom right, $color-six, $color-two);
+    background: -moz-linear-gradient(bottom right, $color-six, $color-two);
+    background: linear-gradient(to bottom right, $color-five, $color-six, $color-two);
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    color: $base-color-one;
+    color: $color-one;
     font-variant-caps: all-small-caps;
     font-weight: lighter;
   }
@@ -248,7 +276,7 @@ div.skills {
       flex-direction: row;
       padding: 0.5em;
       justify-content: space-between;
-      color: darken($base-color-six, 10);
+      color: darken($color-six, 10);
     }
   }
 
@@ -288,6 +316,16 @@ div.skills {
     div img.gitHubChart {
       width: 80vw;
     }
+  }
+}
+
+div.gitHub {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: center;
+
+  p {
+    line-height: 160%;
   }
 }
 
@@ -420,10 +458,14 @@ div.skills {
 }
 
 .gitHub {
+  p {
+    line-height: 160%;
+    padding: 2em;
+  }
+
   img {
-    display: flex;
+    // display: flex;
     justify-content: center;
-    // margin: 10px;
 
     li {
       display: flex;
@@ -453,9 +495,11 @@ div.skills {
 //  Blog posts
 
 .blog {
+  line-height: 160%;
+
   button {
     letter-spacing: 0;
-    color: $base-color-five;
+    color: $color-five;
     cursor: pointer;
     display: block;
     font-size: 0.75em;
@@ -468,9 +512,9 @@ div.skills {
     vertical-align: middle;
     width: 100%;
     background-color: inherit;
-    border-left: 1px solid $base-color-three;
+    border-left: 1px solid $color-three;
     border-top: none;
-    border-right: 1px solid $base-color-three;
+    border-right: 1px solid $color-three;
     border-bottom: none;
     transition-property: all;
     transition-duration: 0.6s;
@@ -504,7 +548,7 @@ div.skills {
   button:hover::after,
   button:hover::before {
     backface-visibility: hidden;
-    border-color: $base-color-five;
+    border-color: $color-five;
     transition: width 350ms ease-in-out;
     width: 100%;
   }
@@ -528,7 +572,7 @@ div.skills {
       background-color: inherit;
       color: hsla(0, 0%, 21%, 0.75);
       width: 25vw;
-      padding: 1.5em;
+      padding: 1.9em;
 
       header {
         height: 4em;
@@ -549,10 +593,15 @@ div.skills {
       display: block;
       width: auto;
       margin: 0;
+      // max-width: 350px;
 
       article {
-        margin-right: 0;
         width: auto;
+        margin-right: 0;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-top: 2em;
+        padding-bottom: 2em;
       }
 
       button {
@@ -564,17 +613,18 @@ div.skills {
 }
 
 footer {
-  color: $base-color-two;
+  color: $color-two;
   font-weight: lighter;
   // background-image: url(../images/ami-city-pier-2.jpg);
   // background-size: cover;
   // background-position: bottom right;
   // background-repeat: no-repeat;
-  background: $base-color-five;
-  background: -webkit-linear-gradient(left top, $base-color-five, $base-color-six, $base-color-two);
-  background: -o-linear-gradient(bottom right, $base-color-five, $base-color-six, $base-color-two);
-  background: -moz-linear-gradient(bottom right, $base-color-five, $base-color-six, $base-color-two);
-  background: linear-gradient(to bottom right, $base-color-five, $base-color-six, $base-color-two);
+  background: $color-five;
+  background: -webkit-linear-gradient(left top, $color-five, $color-six, $color-two);
+  background: -o-linear-gradient(bottom right, $color-five, $color-six, $color-two);
+  background: -moz-linear-gradient(bottom right, $color-five, $color-six, $color-two);
+  background: linear-gradient(to bottom right, $color-five, $color-six, $color-two);
+  margin-top: 2em;
 
   h2 {
     padding-top: 1em;
@@ -615,13 +665,13 @@ footer {
     padding: 1em;
     margin: 0;
     font-weight: lighter;
-    color: $base-color-five;
+    color: $color-five;
   }
 }
 
 @media (max-width: 600px) {
   footer {
-    color: $base-color-two;
+    color: $color-two;
 
     ul {
       display: flex;
@@ -647,7 +697,7 @@ footer {
       text-align: center;
       font-size: 1em;
       padding: 1em;
-      color: $base-color-five;
+      color: $color-five;
       margin: 0;
       font-weight: lighter;
     }
@@ -665,7 +715,7 @@ ul.socials {
 
     &:hover {
       border: 0 solid;
-      // box-shadow: inset 0 0 20px $base-color-three, 0 0 10px $base-color-three;
+      // box-shadow: inset 0 0 20px $color-three, 0 0 10px $color-three;
       outline-color: rgba(255, 255, 255, 0);
       // outline-offset: 30px;
       text-shadow: 4px 4px 8px #427388;

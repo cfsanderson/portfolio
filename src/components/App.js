@@ -30,6 +30,7 @@ class App extends Component {
         location: data.location
       })
     })
+
     window.fetch(MediumURL).then((response) => {
       return response.json()
     }).then((data) => {
