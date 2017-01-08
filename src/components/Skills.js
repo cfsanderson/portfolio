@@ -18,7 +18,7 @@ class Skills extends Component {
               <q>The only person who is educated is the one who has learned how to learn and change.</q><br /><span> - Carl Rogers</span>
             </blockquote>
             <p>I'm a creative, a learner, and a digital craftsman. I'd rather read a book and learn how to make something for myself than buy it off the shelf.</p>
-            <p>I love a challenge and especially when I get to use my skills to create beautiful and useful things. In the past I've done that with music, film, and visual media. While I still enjoy those things, my focus has shifted to software development. Here are some of the creative tools I am currently investing in.<br /> More to come.</p>
+            <p>I love a challenge and especially when I get to use my skills to create beautiful and useful things. In the past I've done that with music, film, and visual media. While I still enjoy those things, my focus has shifted to software development. Here are some of the creative tools I am currently investing in.</p><p>More to come.</p>
           </div>
           <ul className='skill-icons'>
             <li>&#xe636;</li>

@@ -238,6 +238,7 @@ div.bio {
     p {
       line-height: 160%;
       text-align: left;
+      margin-bottom: 2em;
     }
   }
 
@@ -285,13 +286,13 @@ div.skills {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
+    padding-bottom: 4em;
     margin: 0 auto;
-    text-align: center;
     max-width: 900px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     ul {
       display: flex;
       // flex-wrap: wrap;
@@ -300,6 +301,8 @@ div.skills {
       align-items: center;
       list-style-type: none;
       padding: 0;
+      margin: 0 auto;
+      margin-right: 0;
       max-height: 500px;
     }
 
@@ -327,6 +330,7 @@ div.gitHub {
     line-height: 160%;
     padding-left: 20vw;
     padding-right: 20vw;
+    margin-bottom: 2em;
   }
 }
 
@@ -542,6 +546,10 @@ div.gitHub {
     a {
       text-decoration: none;
       color: inherit;
+    }
+
+    p {
+      margin-bottom: 2em;
     }
   }
 
