@@ -1,7 +1,7 @@
 @import 'utility';
 
 $text-size: 16px;
-$font-brandon: 'Brandon Grotesque', sans-serif;
+$font-basic-brandon: 'Brandon Grotesque', 'Raleway', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 $color-one: hsla(177, 8, 99, 1);
 $color-two: hsla(180, 37, 93, 1);
@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  font-family: $font-brandon;
+  font-family: $font-basic-brandon;
   font-weight: lighter;
   color: $font-color;
   background-color: $color-one;
@@ -234,10 +234,10 @@ div.bio {
   .words {
     padding-left: 20vw;
     padding-right: 20vw;
-    text-align: center;
 
     p {
       line-height: 160%;
+      text-align: left;
     }
   }
 
@@ -321,7 +321,7 @@ div.skills {
 }
 
 div.gitHub {
-  text-align: center;
+  text-align: left;
 
   p {
     line-height: 160%;
@@ -644,6 +644,7 @@ footer {
   background: -moz-linear-gradient(bottom right, $color-five, $color-six, $color-two);
   background: linear-gradient(to bottom right, $color-five, $color-six, $color-two);
   margin-top: 2em;
+  // padding-bottom: 2em;
 
   h2 {
     padding-top: 1em;
@@ -685,6 +686,7 @@ footer {
     margin: 0;
     font-weight: lighter;
     color: $color-five;
+    padding-bottom: 4em;
   }
 }
 
@@ -719,6 +721,7 @@ footer {
       color: $color-five;
       margin: 0;
       font-weight: lighter;
+      padding-bottom: 4em;
     }
   }
 }

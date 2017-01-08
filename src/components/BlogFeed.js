@@ -11,7 +11,7 @@ class BlogFeed extends Component {
           <h1>Blog</h1>
           <div className='words'>
             <blockquote className='quote' cite='https://en.wikipedia.org/wiki/Carl_Rogers'>
-              <q>Writing is its own reward.</q><span> – Henry Miller</span>
+              <q>Writing is its own reward.</q><br /><span> – Henry Miller</span>
             </blockquote>
             <p>Maybe it's just a sanity check but the process of writing has always been cathartic for me.  I tried to take some time and document my journey to becoming a Front-End Developer at The Iron Yard.  You can check out all of my posts on <a href='https://medium.com/@cfsanderson' target='_blank'>Medium</a>  but here are a few for starters.</p>
           </div>
