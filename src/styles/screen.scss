@@ -119,7 +119,13 @@ header.top {
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: ease;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
   }
+
 
   button:hover,
   button:active {
