@@ -5,11 +5,17 @@ $font-basic-brandon: 'Brandon Grotesque', 'Raleway', 'Helvetica', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 $color-one: hsla(177, 8, 99, 1);
 $color-two: hsla(180, 37, 93, 1);
+// E7F4F4
 $color-three: hsla(191, 46, 87, 1);
+// CFE8ED
 $color-four: hsl(240, 100%, 10%);
+// 000033
 $color-five: hsla(204, 82%, 17%, 1);
+// 08324F
 $color-six: hsla(183, 55%, 50%, 1);
+// 39BFC6
 $font-color: hsla(0, 0%, 21%, 1);
+// 363636
 
 html {
   text-size-adjust: 100%;
@@ -251,7 +257,7 @@ div.bio {
   .quote {
     margin: 0;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1.5em;
     padding: 2em;
   }
 
@@ -267,10 +273,15 @@ div.bio {
     color: $color-one;
     font-variant-caps: all-small-caps;
     font-weight: lighter;
+    font-size: 3em;
   }
 }
 
 div.skills {
+  // h1 {
+  //   font-size: 3em;
+  // }
+
   ul.skill-icons {
     list-style-type: none;
     display: flex;
@@ -490,7 +501,7 @@ div.gitHub {
 //  Blog posts
 
 .blog {
-  line-height: 160%;
+  // line-height: 160%;
 
   button {
     letter-spacing: 0;
