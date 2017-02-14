@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header'
 import BlogFeed from './BlogFeed'
 import Skills from './Skills'
+import Projects from './Projects'
 import Footer from './Footer'
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
       <div>
         <Header name={this.state.name} />
         <Skills avatar_url={this.state.avatar_url} bio={this.state.bio} />
+        <Projects />
         <BlogFeed items={this.state.blog} />
         <Footer />
       </div>
