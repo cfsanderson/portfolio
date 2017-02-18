@@ -13,7 +13,7 @@ class Projects extends Component {
         <div className='skills section-header'>
           <h1>Projects</h1>
           <div className='words'>
-            <p>As part of our training at <a href='https://www.theironyard.com/'>The Iron Yard</a> we build a lot of simple but functional apps that reinforce programming logic and feature different key aspects of the technologies we are working with. Here are some of my favorite projects including Dash 4 Cash which was my capstone project for the Front-End Engineering course. Click to check them out on <a href='https://github.com/cfsanderson'>GitHub.</a></p>
+            <p>As part of our training at <a href='https://www.theironyard.com/' target='_blank'>The Iron Yard</a> we build a lot of simple but functional apps that reinforce programming logic and feature different key aspects of the technologies we are working with. Here are some of my favorite projects including Dash 4 Cash which was my capstone project for the Front-End Engineering course. Click to check them out on <a href='https://github.com/cfsanderson' target='_blank'>GitHub.</a></p>
           </div>
           <div className='gitHub'>
             <div className='gif-container'>
@@ -52,7 +52,7 @@ class Projects extends Component {
                 </div>
               </div>
             </div>
-            <a href='https://github.com/cfsanderson'>
+            <a href='https://github.com/cfsanderson' target='_blank'>
               <img className='gitHubChart' src='http://ghchart.rshah.org/22ddf6/cfsanderson' alt="Caleb's Github chart" />
             </a>
           </div>
