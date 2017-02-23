@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import Navbar from './Navbar'
 import Header from './Header'
 import BlogFeed from './BlogFeed'
 import Skills from './Skills'
 import Projects from './Projects'
 import Footer from './Footer'
+// import ScrollAnim from 'rc-scroll-anim'
 
 class App extends Component {
 
@@ -44,6 +46,7 @@ class App extends Component {
   render () {
     return (
       <div>
+        <Navbar name={this.state.name} />
         <Header name={this.state.name} />
         <Skills avatar_url={this.state.avatar_url} bio={this.state.bio} />
         <Projects />

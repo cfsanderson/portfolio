@@ -9,7 +9,7 @@ class Header extends Component {
         <header className='top'>
           <h1>{this.props.name}</h1>
           <h2>Front End Developer</h2>
-          <button><a className='resumeLink' href='https://indd.adobe.com/view/af9c4bde-9a84-48fc-a60e-f99965959971' target='_blank'>VIEW RÉSUMÉ</a></button>
+          <button><a className='resumeLink' href='https://indd.adobe.com/view/ecf2f5d6-efe4-4394-8d59-ddc0a6aedd7f' target='_blank'>VIEW RÉSUMÉ</a></button>
           {/* with modal link to my resume https://www.linkedin.com/in/calebsanderson */}
           {/* <div className='bio'>
             <h4>{this.props.bio}</h4>
