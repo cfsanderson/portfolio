@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-// import styles from '../styles/screen.scss'
-
 class Skills extends Component {
 
   render () {
@@ -11,7 +9,7 @@ class Skills extends Component {
           <p>{this.props.bio}</p>
           <img className='avatar_url' src={this.props.avatar_url} />
         </div>
-        <div className='skills section-header'>
+        <div className='skills section-header' id='skills'>
           <h1>Skills</h1>
           <div className='words'>
             <blockquote className='quote' cite='https://en.wikipedia.org/wiki/Carl_Rogers'>

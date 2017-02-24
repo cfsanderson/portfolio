@@ -6,7 +6,7 @@ class Footer extends Component {
 
   render () {
     return (
-      <div className='footer'>
+      <div className='footer' id='social'>
         <footer>
           <h2>Stay connected with me.</h2>
           <ul className='socials'>

@@ -7,7 +7,7 @@ class BlogFeed extends Component {
   render () {
     return (
       <div className='blog'>
-        <div className='section-header'>
+        <div className='section-header' id='blog'>
           <h1>Blog</h1>
           <div className='words'>
             <blockquote className='quote' cite='https://en.wikipedia.org/wiki/Carl_Rogers'>

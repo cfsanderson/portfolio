@@ -5,7 +5,6 @@ import BlogFeed from './BlogFeed'
 import Skills from './Skills'
 import Projects from './Projects'
 import Footer from './Footer'
-// import ScrollAnim from 'rc-scroll-anim'
 
 class App extends Component {
 

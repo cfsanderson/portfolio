@@ -6,7 +6,7 @@ class Header extends Component {
   render () {
     return (
       <div>
-        <header className='top'>
+        <header className='top' id='top'>
           <h1>{this.props.name}</h1>
           <h2>Front End Developer</h2>
           <button><a className='resumeLink' href='https://indd.adobe.com/view/ecf2f5d6-efe4-4394-8d59-ddc0a6aedd7f' target='_blank'>VIEW RÉSUMÉ</a></button>

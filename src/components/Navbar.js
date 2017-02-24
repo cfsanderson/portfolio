@@ -34,18 +34,28 @@ export default class Navbar extends Component {
               </button>
             </li>
             <li>
-              <ScrollAnimLink to='whatisD4C' onClick={() => this.toggle()}>Skills
+              <ScrollAnimLink to='top' onClick={() => this.toggle()}>Top
+                <i className='fa fa-chevron-up' aria-hidden='true' />
+              </ScrollAnimLink>
+            </li>
+            <li>
+              <ScrollAnimLink to='skills' onClick={() => this.toggle()}>Skills
                 <i className='fa fa-cogs' aria-hidden='true' />
               </ScrollAnimLink>
             </li>
             <li>
-              <ScrollAnimLink to='donate' onClick={() => this.toggle()}>Projects
+              <ScrollAnimLink to='projects' onClick={() => this.toggle()}>Projects
                 <i className='fa fa-wrench' aria-hidden='true' />
               </ScrollAnimLink>
             </li>
             <li>
-              <ScrollAnimLink to='dash' onClick={() => this.toggle()}>Blog
+              <ScrollAnimLink to='blog' onClick={() => this.toggle()}>Blog
                 <i className='fa fa-medium' aria-hidden='true' />
+              </ScrollAnimLink>
+            </li>
+            <li>
+              <ScrollAnimLink to='social' onClick={() => this.toggle()}>Socials
+                <i className='fa fa-users' aria-hidden='true' />
               </ScrollAnimLink>
             </li>
             {/* <li>
