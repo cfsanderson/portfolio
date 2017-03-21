@@ -8,8 +8,8 @@ class Header extends Component {
       <div>
         <header className='top' id='top'>
           <h1>{this.props.name}</h1>
-          <h2>Front End Developer</h2>
-          <a className='resumeLink' href='https://indd.adobe.com/view/ecf2f5d6-efe4-4394-8d59-ddc0a6aedd7f' target='_blank'><button>VIEW RÉSUMÉ</button></a>
+          <h2>Front End Developer<br />& Web Designer </h2>
+          {/* <a className='resumeLink' href='https://indd.adobe.com/view/ecf2f5d6-efe4-4394-8d59-ddc0a6aedd7f' target='_blank'><button>VIEW RÉSUMÉ</button></a> */}
           {/* with modal link to my resume https://www.linkedin.com/in/calebsanderson */}
           {/* <div className='bio'>
             <h4>{this.props.bio}</h4>
