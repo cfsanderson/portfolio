@@ -16,7 +16,19 @@ Some of this site's features are...
  * The hover effect for the GitHub project gifs were adapted from [these examples by Mike Young](https://miketricking.github.io/dist/).
 
 ###TODO Some things I would like to add in the future...
-- [] Medium does not support importing latest blogposts through their API. I am trying to find a work-around for this. Until then I will continue to update the content manually.
-- [] Multiple components for content sections.
-- [] update to cssnext
-- [] add email contact form
+- [ ] Medium does not support importing latest blogposts through their API. I am trying to find a work-around for this. Until then I will continue to update the content manually.
+- [ ] Multiple components for content sections.
+- [ ] update to cssnext
+- [ ] add email contact form
+- [ ] date function for footer
+- [ ] remove "Built with <3 at The Iron Yard" from footer
+- [ ] update font styles
+  - [ ] weights
+  - [ ] serif font for body text
+  - [ ] line-height in blog abstracts
+  - [ ] main h1
+- [ ] adjust hamburger
+- [ ] move nav to lower right on mobile
+- [ ] update projects
+  - [ ] HTML canvas
+  - [ ]

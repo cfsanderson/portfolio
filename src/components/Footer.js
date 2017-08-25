@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <div className='footer' id='social'>
         <footer>
-          <h2>Stay connected with me.</h2>
+          <h2>Stay connected</h2>
           <ul className='socials'>
             <li><a href='https://twitter.com/cfsanderson' target='_blank'><i className='fa fa-twitter' aria-hidden='true' /></a></li>
             <li><a href='https://www.facebook.com/caleb.f.sanderson' target='_blank'><i className='fa fa-facebook' aria-hidden='true' /></a></li>
@@ -16,7 +16,7 @@ class Footer extends Component {
             <li><a href='https://www.linkedin.com/in/calebsanderson' target='_blank'><i className='fa fa-linkedin' aria-hidden='true' /></a></li>
             <li><a href='https://github.com/cfsanderson' target='_blank'><i className='fa fa-github' aria-hidden='true' /></a></li>
           </ul>
-          <h5>Copyright &copy; 2016 Caleb Frost Sanderson. Built with <i className='fa fa-heart' aria-hidden='true' /> at The Iron Yard</h5>
+          <h5>Copyright &copy; 2017 Caleb Frost Sanderson.</h5>
         </footer>
       </div>
     )
