@@ -21,7 +21,7 @@ class Projects extends Component {
                 <div className='hovereffect'>
                   <img src={crabTacToe} alt='Crab-Tac-Toe game animated GIF' width='323' height='200' />
                   <div className='overlay'>
-                    <a href='https://github.com/cfsanderson/tic-tac-toe' target='_blank'>
+                    <a href='http://tic-tac-toe.cfsanderson.surge.sh/' target='_blank'>
                       <h2>Crab-Tac-Toe</h2>
                       <p><i className='fa fa-github' aria-hidden='true' /></p>
                     </a>
@@ -32,7 +32,7 @@ class Projects extends Component {
                 <div className='hovereffect'>
                   <img src={minesweeper} alt='Minesweeper game animated GIF' width='323' height='200' />
                   <div className='overlay'>
-                    <a href='https://github.com/cfsanderson/explosion-avoider' target='_blank'>
+                    <a href='http://explosion-avoider.cfsanderson.surge.sh/' target='_blank'>
                       <h2>Minesweeper</h2>
                       <p><i className='fa fa-github' aria-hidden='true' /></p>
                     </a>
@@ -44,7 +44,7 @@ class Projects extends Component {
                   {/* <img src='http://i.imgur.com/SoQJh1c.gif'alt='Snowman game animated GIF' width='323' height='200' /> */}
                   <img src={D4C} alt='Dash 4 Cash project animated GIF' width='323' height='200' />
                   <div className='overlay'>
-                    <a href='https://github.com/cfsanderson/dash-4-cash' target='_blank'>
+                    <a href='http://dash-4-cash.cfsanderson.surge.sh/' target='_blank'>
                       <h2>Dash 4 Cash</h2>
                       <p><i className='fa fa-github' aria-hidden='true' /></p>
                     </a>
