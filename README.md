@@ -6,7 +6,6 @@ I started this site as part of my coursework at [The Iron Yard](https://www.thei
 
 ###TODO Some things I would like to add in the future...
 - [ ] Multiple components for content sections.
-- [ ] update to cssnext
 - [ ] add email contact form
 - [ ] date function for footer
 - [ ] move nav to lower right on mobile
