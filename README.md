@@ -10,3 +10,4 @@ I started this site as part of my coursework at [The Iron Yard](https://www.thei
 - [ ] date function for footer
 - [ ] move nav to lower right on mobile
 - [ ] update projects
+- [ ] something to justify a commit here.
