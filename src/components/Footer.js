@@ -15,7 +15,7 @@ class Footer extends Component {
             <li><a href='https://www.linkedin.com/in/calebsanderson' target='_blank'><i className='fa fa-linkedin' aria-hidden='true' /></a></li>
             <li><a href='https://github.com/cfsanderson' target='_blank'><i className='fa fa-github' aria-hidden='true' /></a></li>
           </ul>
-          <h5>Copyright &copy; 2017 Caleb Frost Sanderson.</h5>
+          <h5>Copyright &copy; 2018 Caleb Frost Sanderson.</h5>
         </footer>
       </div>
     )
